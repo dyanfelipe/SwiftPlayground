@@ -3,15 +3,16 @@ import UIKit
 /**
  compound cases
  commit signed t1
+ validation with range
  */
-let value = 1
+let value = 10
 switch value {
     
-case 1,2,3:
+case 0...10:
     print("TRUE")
     // MARK:  no need to add the word break for the process to stop
     // MARK: When you add the word “fallthrough” it will continue checking even though it has already found the value
-case 7,9,10:
+case 11...100:
     print("FALSE")
     
 default:
